@@ -1,4 +1,5 @@
-# diffusion_analyzer.py
-Log10 revision for the script of diffusion_analyzer.py
+# Some *py scripts should be replaced in the latest installed Pymatgen package
 
-only this entries/computed_entries.py is compatible for interface_calculation by Yifei group
+1. Log10 revision for the script of analysis/diffusion_analyzer.py
+
+2. only this entries/computed_entries.py is compatible for interface_calculation by Yifei group
