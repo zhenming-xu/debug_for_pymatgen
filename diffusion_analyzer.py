@@ -892,8 +892,9 @@ def get_arrhenius_plot(temps, diffusivities, diffusivity_errors=None,
 
     t_1 = 1000 / np.array(temps)
 
-    plt.plot(t_1, np.log10(diffusivities), color=red, 's', markersize=13, 
-            t_1, np.log10(arr), '--',  color=blue, linewidth=2.5, **kwargs)
+    plt.plot(t_1, np.log10(diffusivities), 'rs', markersize=13) 
+    plt.plot(t_1, np.log10(arr), color='blue', linestyle='--', linewidth=2.5)
+    
     if diffusivity_errors is not None:
         n = len(diffusivity_errors)
         plt.errorbar(t_1[0:n], diffusivities[0:n], yerr=diffusivity_errors,
