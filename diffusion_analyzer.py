@@ -902,7 +902,7 @@ def get_arrhenius_plot(temps, diffusivities, diffusivity_errors=None,
     #ax = plt.axes()
     #ax.set_yscale('log')
     plt.text(0.6, 0.85, "E$_a$ = {} meV".format(round(Ea * 1000,2)),
-             fontsize=30)#, transform=plt.axes().transAxes)
+             fontsize=30, transform=plt.axes().transAxes)
     plt.ylabel("log$_1$$_0$(D(cm$^2$/s))")
     plt.xlabel("1000/T (K$^{-1}$)")
     plt.tight_layout()
