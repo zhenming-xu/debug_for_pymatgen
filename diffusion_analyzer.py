@@ -888,20 +888,19 @@ def get_arrhenius_plot(temps, diffusivities, diffusivity_errors=None,
     plt = pretty_plot(12, 8)
 
     # log10 of the arrhenius fit
-    arr = c * np.exp(-Ea / (const.k / const.e * np.array(temps)))
-
-    t_1 = 1000 / np.array(temps)
+    arr = c * np.exp(-Ea/(const.k/const.e * np.array(temps)))
+    t_1 = 1000/np.array(temps)
 
     plt.plot(t_1, np.log10(diffusivities), 'rs', markersize=13) 
-    plt.plot(t_1, np.log10(arr), color='blue', linestyle='--', linewidth=2.5)
+    plt.plot(t_1, np.log10(arr), color='blue', linestyle='-', linewidth=2.5)
     
     if diffusivity_errors is not None:
         n = len(diffusivity_errors)
-        plt.errorbar(t_1[0:n], diffusivities[0:n], yerr=diffusivity_errors,
-                     fmt='ko', ecolor='k', capthick=2, linewidth=2)
-    ax = plt.axes()
-    ax.set_yscale('log')
-    plt.text(0.6, 0.85, "E$_a$ = {} meV".format(round(Ea * 1000,2)),
+        plt.errorbar(t_1[0:n], np.log10(diffusivities[0:n]), yerr=diffusivity_errors,
+                     fmt='o', ms=10, mfc='r', mec='r', ecolor='r', capsize=5, capthick=2, elinewidth=2)
+    # ax = plt.axes()
+    # ax.set_yscale('log')
+    plt.text(0.6, 0.85, "E$_a$ = {} meV".format(round(Ea*1000,2)),
              fontsize=30, transform=plt.axes().transAxes)
     plt.ylabel("log$_1$$_0$(D(cm$^2$/s))")
     plt.xlabel("1000/T (K$^{-1}$)")
