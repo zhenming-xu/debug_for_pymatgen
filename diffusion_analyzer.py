@@ -476,7 +476,7 @@ class DiffusionAnalyzer(MSONable):
         """
         from pymatgen.util.plotting import pretty_plot
         plt = pretty_plot(12, 8, plt=plt)
-        if np.max(self.dt) > 100000:
+        if np.max(self.dt) > 10000:
             plot_dt = self.dt / 1000
             unit = 'ps'
         else:
