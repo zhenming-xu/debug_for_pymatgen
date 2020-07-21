@@ -899,8 +899,8 @@ def get_arrhenius_plot(temps, diffusivities, diffusivity_errors=None,
         n = len(diffusivity_errors)
         plt.errorbar(t_1[0:n], diffusivities[0:n], yerr=diffusivity_errors,
                      fmt='ko', ecolor='k', capthick=2, linewidth=2)
-    #ax = plt.axes()
-    #ax.set_yscale('log')
+    ax = plt.axes()
+    ax.set_yscale('log')
     plt.text(0.6, 0.85, "E$_a$ = {} meV".format(round(Ea * 1000,2)),
              fontsize=30, transform=plt.axes().transAxes)
     plt.ylabel("log$_1$$_0$(D(cm$^2$/s))")
