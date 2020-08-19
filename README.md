@@ -1,7 +1,9 @@
 # Some *py scripts should be replaced in the latest installed Pymatgen package
 
-1. Log10 revision for the script of ~/anaconda3/lib/python3.7/site-packages/pymatgen/analysis/diffusion_analyzer.py
+1. replace diffusion_analyzer.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/analysis/diffusion_analyzer.py
 
-2. only this ~/anaconda3/lib/python3.7/site-packages/pymatgen/entries/computed_entries.py is compatible for interface_calculation by Yifei group
+2. replace computed_entries.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/entries/computed_entries.py
 
-3. replace inputs.py and sets.py in ~/anaconda3/lib/python3.7/site-packages/pymatgen/io/vasp/
+3. replace inputs.py and sets.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/io/vasp/inputs.py and sets.py
+
+4. replace plotter.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/electronic_structure/plotter.py
