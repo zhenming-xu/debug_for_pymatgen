@@ -7,3 +7,5 @@
 3. replace inputs.py and sets.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/io/vasp/inputs.py and sets.py
 
 4. replace plotter.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/electronic_structure/plotter.py
+
+5. replace func_groups.json for ~/anaconda3/lib/python3.7/site-packages/pymatgen/core/func_groups.json
