@@ -9,3 +9,5 @@
 4. replace plotter.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/electronic_structure/plotter.py
 
 5. replace func_groups.json for ~/anaconda3/lib/python3.7/site-packages/pymatgen/core/func_groups.json
+
+6. replace wulff.py for /Users/xzm/anaconda3/lib/python3.7/site-packages/pymatgen/analysis/wulff.py
