@@ -1,3 +1,8 @@
+## run replace.sh
+
+
+
+
 # Some *py scripts should be replaced in the latest installed Pymatgen package
 
 1. replace diffusion_analyzer.py for ~/anaconda3/lib/python3.7/site-packages/pymatgen/analysis/diffusion_analyzer.py
